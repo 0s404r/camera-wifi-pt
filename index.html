@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Câmara WiFi Ultra-Clara Sem Fios – Monitorização Discreta | ZEAVS</title>
+<meta name="description" content="Câmara WiFi ultra-clara sem fios para monitorização discreta. Visão noturna por infravermelhos, conexão Bluetooth, autonomia de 980 dias.">
+<link rel="preconnect" href="https://zeavs.com">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;background:#fff;line-height:1.5}
+a{color:inherit;text-decoration:none}
+.container{max-width:1280px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid #eee;padding:15px 0;position:sticky;top:0;background:#fff;z-index:100}
+.header-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:32px;font-weight:800;letter-spacing:2px;color:#0d8a8c;font-style:italic}
+nav ul{display:flex;list-style:none;gap:30px}
+nav a{font-size:14px;color:#333}
+nav a:hover{color:#0d8a8c}
+.header-icons{display:flex;gap:18px;font-size:20px}
+.product{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:40px 0}
+.product-images img{width:100%;display:block;border-radius:6px;margin-bottom:12px;background:#f5f5f5}
+.thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:10px}
+.thumbs img{cursor:pointer;border:2px solid transparent;border-radius:4px}
+.thumbs img.active{border-color:#7c3aed}
+.reviews{color:#777;font-size:13px;margin-bottom:8px}
+h1.product-title{font-size:22px;font-weight:600;margin-bottom:14px;line-height:1.3}
+.price-row{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.price{font-size:28px;font-weight:700;color:#7c3aed}
+.old-price{text-decoration:line-through;color:#999;font-size:18px}
+.save-badge{background:#7c3aed;color:#fff;padding:4px 10px;border-radius:4px;font-size:13px;font-weight:600}
+.sku{color:#666;font-size:13px;margin-bottom:18px}
+.color-label{font-weight:600;margin-bottom:8px;font-size:14px}
+.color-options{display:flex;gap:10px;margin-bottom:20px}
+.color-btn{padding:10px 16px;border:2px solid #ddd;background:#fff;border-radius:6px;cursor:pointer;font-size:14px}
+.color-btn.active{border-color:#7c3aed;background:#f3eaff}
+.bundle-title{font-weight:700;font-size:15px;margin:18px 0 10px;letter-spacing:.5px}
+.bundles{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.bundle{border:2px solid #e3e3e3;border-radius:10px;padding:14px;cursor:pointer;position:relative;display:flex;justify-content:space-between;align-items:center;transition:all .2s}
+.bundle.active{border-color:#7c3aed;background:#faf5ff}
+.bundle-info h4{font-size:15px;margin-bottom:4px}
+.bundle-info p{font-size:12px;color:#666}
+.bundle-price{text-align:right}
+.bundle-price .now{font-size:18px;font-weight:700;color:#7c3aed}
+.bundle-price .was{text-decoration:line-through;color:#999;font-size:13px}
+.badge{position:absolute;top:-9px;left:14px;background:#ff4d4d;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:.5px}
+.badge.popular{background:#7c3aed}
+.btn{display:block;width:100%;padding:16px;border:none;border-radius:30px;font-size:15px;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;transition:transform .15s}
+.btn:active{transform:scale(.98)}
+.btn-add{background:#fff;color:#7c3aed;border:2px solid #7c3aed}
+.btn-buy{background:#7c3aed;color:#fff}
+.timeline{display:flex;justify-content:space-between;margin:30px 0;padding:20px 0;border-top:1px solid #eee;border-bottom:1px solid #eee}
+.timeline-item{flex:1;text-align:center;font-size:13px;color:#555}
+.timeline-item .icon{font-size:24px;margin-bottom:6px;display:block}
+.timeline-item strong{display:block;color:#1a1a1a;margin-bottom:2px}
+.description{padding:50px 0;background:#fafafa}
+.description h2{font-size:24px;margin-bottom:20px;text-align:center}
+.description-content{max-width:900px;margin:0 auto}
+.description-content img{width:100%;border-radius:8px;margin:14px 0}
+.description-content p{font-size:15px;margin:14px 0;color:#333}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:30px 0}
+.feature{text-align:center;padding:20px;background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.feature .ico{font-size:36px;margin-bottom:10px}
+.feature h3{font-size:16px;margin-bottom:8px;color:#7c3aed}
+.feature p{font-size:14px;color:#555}
+.reviews-section{padding:50px 0}
+.reviews-section h2{text-align:center;font-size:24px;margin-bottom:30px}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.review-card{padding:20px;border:1px solid #eee;border-radius:10px}
+.stars{color:#ffb400;margin-bottom:10px}
+.review-card p{font-size:14px;color:#555;margin-bottom:10px}
+.review-card .author{font-weight:600;font-size:13px}
+footer{background:#1a1a1a;color:#ccc;padding:40px 0;text-align:center;font-size:13px}
+footer a{color:#fff}
+@media(max-width:768px){
+  .product{grid-template-columns:1fr;gap:20px;padding:20px 0}
+  .features,.review-grid{grid-template-columns:1fr}
+  nav{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container header-inner">
+    <div class="logo">ZEAVS</div>
+    <nav><ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Tapetes Artesanais</a></li>
+      <li><a href="#">Mini Câmara</a></li>
+      <li><a href="#">Sobre / Contacto</a></li>
+    </ul></nav>
+    <div class="header-icons">🔍 👤 🛒</div>
+  </div>
+</header>
+
+<section class="container product">
+  <div class="product-images">
+    <img id="mainImg" src="https://zeavs.com/cdn/shop/files/e460e5068cbe399aeabca44a1d36a5b2_aa3a0796-a8ad-47b4-9f15-eeaa065c864f.gif" alt="Câmara WiFi Ultra-Clara">
+    <div class="thumbs">
+      <img class="active" src="https://zeavs.com/cdn/shop/files/e460e5068cbe399aeabca44a1d36a5b2_aa3a0796-a8ad-47b4-9f15-eeaa065c864f.gif" alt="">
+      <img src="https://zeavs.com/cdn/shop/files/998e0a36151d6df248b31f90dfac258a63143212943131010958169EN11679091c5a880faf6fb5e6087eb1b2dc_ba3c0d0f-0390-4d54-acb3-cb05dff4b73a.jpg" alt="">
+      <img src="https://zeavs.com/cdn/shop/files/b9838d176a21e2e09fecd347aaccb50663143212943131010958169EN18f14e45fceea167a5a36dedd4bea2543_d6d2060e-d1a9-4741-ab38-5cfe38fc739a.jpg" alt="">
+      <img src="https://zeavs.com/cdn/shop/files/b0c681eff73dbfc109134f2fb77e92cd63143212943131010958169EN1c9f0f895fb98ab9159f51fd0297e236d_08c76b06-748f-4b77-9351-7da8e88dfd9d.jpg" alt="">
+      <img src="https://zeavs.com/cdn/shop/files/5ee8b22f1c0dba88931074966c96f27b63143212943131010958169EN145c48cce2e2d7fbdea1afc51c7c6ad26_b402a9fa-fdc0-4227-b170-fe4d1fc14d33.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="product-info">
+    <div class="reviews">★★★★★ (2.760 Avaliações)</div>
+    <h1 class="product-title">✅🤖 Câmara WiFi Ultra-Clara Sem Fios para Monitorização Discreta — controle a sua casa em qualquer lugar 💫</h1>
+    <div class="price-row">
+      <span class="price">59,99€</span>
+      <span class="old-price">149,99€</span>
+      <span class="save-badge">POUPE 60%</span>
+    </div>
+    <div class="sku">SKU: O-9166</div>
+
+    <div class="color-label">Cor — A9</div>
+    <div class="color-options">
+      <button class="color-btn active">A9 Câmara Sem Fios</button>
+    </div>
+
+    <div class="bundle-title">PACOTE & POUPE</div>
+    <div class="bundles">
+      <div class="bundle">
+        <div class="bundle-info">
+          <h4>Comprar 1</h4>
+          <p>Poupa 90,00€</p>
+        </div>
+        <div class="bundle-price"><div class="now">59,99€</div><div class="was">149,99€</div></div>
+      </div>
+      <div class="bundle active">
+        <span class="badge popular">MAIS POPULAR</span>
+        <div class="bundle-info">
+          <h4>Comprar 2 — 10% OFF</h4>
+          <p>Poupa 191,98€</p>
+        </div>
+        <div class="bundle-price"><div class="now">107,98€</div><div class="was">299,98€</div></div>
+      </div>
+      <div class="bundle">
+        <span class="badge">MELHOR VALOR 🔥</span>
+        <div class="bundle-info">
+          <h4>Comprar 3 — 15% OFF</h4>
+          <p>Poupa 297,00€</p>
+        </div>
+        <div class="bundle-price"><div class="now">152,97€</div><div class="was">449,97€</div></div>
+      </div>
+      <div class="bundle">
+        <span class="badge">MAIS POUPANÇA 🔥🔥</span>
+        <div class="bundle-info">
+          <h4>Comprar 4 — 20% OFF</h4>
+          <p>Poupa 407,04€</p>
+        </div>
+        <div class="bundle-price"><div class="now">191,96€</div><div class="was">599,96€</div></div>
+      </div>
+    </div>
+
+    <button class="btn btn-add">Adicionar ao Carrinho</button>
+    <button class="btn btn-buy">Comprar Agora</button>
+
+    <div class="timeline">
+      <div class="timeline-item"><span class="icon">🛒</span><strong>25 de Maio</strong>Encomendado</div>
+      <div class="timeline-item"><span class="icon">🚚</span><strong>26–27 de Maio</strong>Encomenda Pronta</div>
+      <div class="timeline-item"><span class="icon">🎁</span><strong>4–6 de Junho</strong>Entregue</div>
+    </div>
+  </div>
+</section>
+
+<section class="description">
+  <div class="container description-content">
+    <h2>Descrição do Produto</h2>
+    <p>A câmara WiFi ultra-clara sem fios da ZEAVS foi concebida para uma vigilância discreta e fiável. Com qualidade de imagem nítida, visão noturna por infravermelhos e ligação Bluetooth, pode acompanhar tudo o que importa — em casa, no escritório ou em viagem.</p>
+
+    <div class="features">
+      <div class="feature"><div class="ico">📡</div><h3>Ligação Bluetooth</h3><p>Funciona com ou sem internet, ideal para qualquer ambiente.</p></div>
+      <div class="feature"><div class="ico">🌙</div><h3>Visão Noturna HD</h3><p>Infravermelhos de alta definição para imagens claras à noite.</p></div>
+      <div class="feature"><div class="ico">🔋</div><h3>Autonomia 980 dias</h3><p>Um único carregamento dura cerca de 900 dias em modo standby.</p></div>
+    </div>
+
+    <img src="https://zeavs.com/cdn/shop/files/998e0a36151d6df248b31f90dfac258a63143212943131010958169EN11679091c5a880faf6fb5e6087eb1b2dc_ba3c0d0f-0390-4d54-acb3-cb05dff4b73a.jpg" alt="Detalhes do produto">
+    <img src="https://zeavs.com/cdn/shop/files/b9838d176a21e2e09fecd347aaccb50663143212943131010958169EN18f14e45fceea167a5a36dedd4bea2543_d6d2060e-d1a9-4741-ab38-5cfe38fc739a.jpg" alt="Características">
+    <img src="https://zeavs.com/cdn/shop/files/b0c681eff73dbfc109134f2fb77e92cd63143212943131010958169EN1c9f0f895fb98ab9159f51fd0297e236d_08c76b06-748f-4b77-9351-7da8e88dfd9d.jpg" alt="Funcionalidades">
+    <img src="https://zeavs.com/cdn/shop/files/5ee8b22f1c0dba88931074966c96f27b63143212943131010958169EN145c48cce2e2d7fbdea1afc51c7c6ad26_b402a9fa-fdc0-4227-b170-fe4d1fc14d33.jpg" alt="Instalação">
+    <img src="https://zeavs.com/cdn/shop/files/8866efdd19aad2874375a9a6415c890963143212943131010958169EN1d3d9446802a44259755d38e6d163e820_8d7cae1a-257a-476d-beaa-955de734ee96.jpg" alt="Mais detalhes">
+
+    <p><strong>Sem preocupações com o atendimento ao cliente.</strong> 36 meses de substituição gratuita, 30 dias de garantia e reembolso incondicional possível.</p>
+  </div>
+</section>
+
+<section class="reviews-section">
+  <div class="container">
+    <h2>O que dizem os nossos clientes</h2>
+    <div class="review-grid">
+      <div class="review-card"><div class="stars">★★★★★</div><p>Produto excelente! A qualidade da imagem é impressionante, especialmente à noite. Recomendo vivamente.</p><div class="author">— Maria Silva</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>Muito fácil de instalar e a bateria realmente dura imenso tempo. Estou muito satisfeito com a compra.</p><div class="author">— João Pereira</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>Discreta e eficaz. Perfeita para monitorizar a minha loja sem que ninguém repare. Vale cada cêntimo.</p><div class="author">— Ana Costa</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 ZEAVS — Todos os direitos reservados. | <a href="#">Política de Privacidade</a> · <a href="#">Termos</a> · <a href="#">Contacto</a></p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.thumbs img').forEach(t=>{
+  t.addEventListener('click',()=>{
+    document.querySelectorAll('.thumbs img').forEach(i=>i.classList.remove('active'));
+    t.classList.add('active');
+    document.getElementById('mainImg').src=t.src;
+  });
+});
+document.querySelectorAll('.bundle').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.bundle').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
