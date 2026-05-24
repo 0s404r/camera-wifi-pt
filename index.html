@@ -3,91 +3,129 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Câmara WiFi Ultra-Clara Sem Fios – Monitorização Discreta | ZEAVS</title>
-<meta name="description" content="Câmara WiFi ultra-clara sem fios para monitorização discreta. Visão noturna por infravermelhos, conexão Bluetooth, autonomia de 980 dias.">
-<link rel="preconnect" href="https://zeavs.com">
+<title>Ultra-Clear Wireless WiFi Camera | ZEAVS</title>
+<meta name="description" content="Câmara WiFi ultra-clara sem fios — visão noturna por infravermelhos, autonomia 980 dias, entrega rápida em Portugal.">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;background:#fff;line-height:1.5}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1a1a1a;background:#fff;line-height:1.55}
 a{color:inherit;text-decoration:none}
-.container{max-width:1280px;margin:0 auto;padding:0 20px}
-header{border-bottom:1px solid #eee;padding:15px 0;position:sticky;top:0;background:#fff;z-index:100}
-.header-inner{display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:32px;font-weight:800;letter-spacing:2px;color:#0d8a8c;font-style:italic}
-nav ul{display:flex;list-style:none;gap:30px}
-nav a{font-size:14px;color:#333}
+img{max-width:100%;display:block}
+.container{max-width:1240px;margin:0 auto;padding:0 18px}
+.announce{background:#111;color:#fff;text-align:center;padding:9px 12px;font-size:13px;letter-spacing:.5px}
+.announce strong{color:#ffd966}
+header{border-bottom:1px solid #eee;padding:14px 0;position:sticky;top:0;background:#fff;z-index:100}
+.header-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font-size:30px;font-weight:800;letter-spacing:2px;color:#0d8a8c;font-style:italic}
+nav ul{display:flex;list-style:none;gap:26px}
+nav a{font-size:14px;color:#333;transition:color .15s}
 nav a:hover{color:#0d8a8c}
-.header-icons{display:flex;gap:18px;font-size:20px}
-.product{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:40px 0}
-.product-images img{width:100%;display:block;border-radius:6px;margin-bottom:12px;background:#f5f5f5}
+.header-icons{display:flex;gap:16px;font-size:20px;cursor:pointer}
+.product{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;padding:36px 0}
+.product-images .main-img{width:100%;border-radius:10px;background:#f5f5f5;aspect-ratio:1/1;object-fit:cover}
 .thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:10px}
-.thumbs img{cursor:pointer;border:2px solid transparent;border-radius:4px}
-.thumbs img.active{border-color:#7c3aed}
-.reviews{color:#777;font-size:13px;margin-bottom:8px}
-h1.product-title{font-size:22px;font-weight:600;margin-bottom:14px;line-height:1.3}
-.price-row{display:flex;align-items:center;gap:12px;margin-bottom:14px}
-.price{font-size:28px;font-weight:700;color:#7c3aed}
+.thumbs img{cursor:pointer;border:2px solid transparent;border-radius:6px;aspect-ratio:1/1;object-fit:cover;transition:border-color .15s}
+.thumbs img.active,.thumbs img:hover{border-color:#7c3aed}
+.reviews-stars{color:#ffb400;font-size:14px;margin-bottom:8px}
+.reviews-stars span{color:#666;margin-left:6px}
+h1.product-title{font-size:24px;font-weight:700;margin-bottom:14px;line-height:1.3}
+.price-row{display:flex;align-items:center;gap:12px;margin-bottom:6px;flex-wrap:wrap}
+.price{font-size:32px;font-weight:800;color:#7c3aed}
 .old-price{text-decoration:line-through;color:#999;font-size:18px}
-.save-badge{background:#7c3aed;color:#fff;padding:4px 10px;border-radius:4px;font-size:13px;font-weight:600}
-.sku{color:#666;font-size:13px;margin-bottom:18px}
-.color-label{font-weight:600;margin-bottom:8px;font-size:14px}
-.color-options{display:flex;gap:10px;margin-bottom:20px}
-.color-btn{padding:10px 16px;border:2px solid #ddd;background:#fff;border-radius:6px;cursor:pointer;font-size:14px}
-.color-btn.active{border-color:#7c3aed;background:#f3eaff}
-.bundle-title{font-weight:700;font-size:15px;margin:18px 0 10px;letter-spacing:.5px}
-.bundles{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
-.bundle{border:2px solid #e3e3e3;border-radius:10px;padding:14px;cursor:pointer;position:relative;display:flex;justify-content:space-between;align-items:center;transition:all .2s}
-.bundle.active{border-color:#7c3aed;background:#faf5ff}
-.bundle-info h4{font-size:15px;margin-bottom:4px}
+.save-badge{background:#7c3aed;color:#fff;padding:5px 11px;border-radius:4px;font-size:12px;font-weight:700;letter-spacing:.5px}
+.sku{color:#777;font-size:13px;margin-bottom:18px}
+.trust-row{display:flex;gap:18px;margin:14px 0 22px;flex-wrap:wrap}
+.trust-row span{font-size:13px;color:#444;display:flex;align-items:center;gap:6px}
+.bundle-title{font-weight:700;font-size:14px;margin:8px 0 12px;letter-spacing:.5px;color:#333}
+.bundles{display:flex;flex-direction:column;gap:10px;margin-bottom:22px}
+.bundle{border:2px solid #e3e3e3;border-radius:12px;padding:14px 16px;cursor:pointer;position:relative;display:flex;justify-content:space-between;align-items:center;transition:all .15s;background:#fff}
+.bundle:hover{border-color:#bba5e8}
+.bundle.active{border-color:#7c3aed;background:#faf5ff;box-shadow:0 2px 12px rgba(124,58,237,.12)}
+.bundle-info h4{font-size:15px;margin-bottom:3px;font-weight:600}
 .bundle-info p{font-size:12px;color:#666}
 .bundle-price{text-align:right}
-.bundle-price .now{font-size:18px;font-weight:700;color:#7c3aed}
+.bundle-price .now{font-size:18px;font-weight:800;color:#7c3aed}
 .bundle-price .was{text-decoration:line-through;color:#999;font-size:13px}
-.badge{position:absolute;top:-9px;left:14px;background:#ff4d4d;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:.5px}
+.badge{position:absolute;top:-9px;left:14px;background:#ff4d4d;color:#fff;font-size:10px;font-weight:700;padding:3px 9px;border-radius:4px;letter-spacing:.5px}
 .badge.popular{background:#7c3aed}
-.btn{display:block;width:100%;padding:16px;border:none;border-radius:30px;font-size:15px;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;transition:transform .15s}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:17px;border:none;border-radius:30px;font-size:16px;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:.8px;transition:all .15s;font-family:inherit}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(124,58,237,.3)}
 .btn:active{transform:scale(.98)}
-.btn-add{background:#fff;color:#7c3aed;border:2px solid #7c3aed}
-.btn-buy{background:#7c3aed;color:#fff}
-.timeline{display:flex;justify-content:space-between;margin:30px 0;padding:20px 0;border-top:1px solid #eee;border-bottom:1px solid #eee}
+.btn-buy{background:linear-gradient(135deg,#7c3aed 0%,#5b21b6 100%);color:#fff}
+.timeline{display:flex;justify-content:space-between;margin:26px 0;padding:18px 0;border-top:1px solid #eee;border-bottom:1px solid #eee;gap:10px}
 .timeline-item{flex:1;text-align:center;font-size:13px;color:#555}
-.timeline-item .icon{font-size:24px;margin-bottom:6px;display:block}
-.timeline-item strong{display:block;color:#1a1a1a;margin-bottom:2px}
+.timeline-item .icon{font-size:22px;margin-bottom:5px;display:block}
+.timeline-item strong{display:block;color:#1a1a1a;margin-bottom:2px;font-size:13px}
 .description{padding:50px 0;background:#fafafa}
-.description h2{font-size:24px;margin-bottom:20px;text-align:center}
-.description-content{max-width:900px;margin:0 auto}
-.description-content img{width:100%;border-radius:8px;margin:14px 0}
+.description h2{font-size:28px;margin-bottom:8px;text-align:center;font-weight:700}
+.description .sub{text-align:center;color:#666;margin-bottom:30px;font-size:15px}
+.description-content{max-width:920px;margin:0 auto}
+.description-content img{width:100%;border-radius:8px;margin:12px 0}
 .description-content p{font-size:15px;margin:14px 0;color:#333}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:30px 0}
-.feature{text-align:center;padding:20px;background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
-.feature .ico{font-size:36px;margin-bottom:10px}
-.feature h3{font-size:16px;margin-bottom:8px;color:#7c3aed}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:24px 0}
+.feature{text-align:center;padding:22px 18px;background:#fff;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.feature .ico{font-size:34px;margin-bottom:10px}
+.feature h3{font-size:16px;margin-bottom:8px;color:#7c3aed;font-weight:700}
 .feature p{font-size:14px;color:#555}
 .reviews-section{padding:50px 0}
-.reviews-section h2{text-align:center;font-size:24px;margin-bottom:30px}
-.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.review-card{padding:20px;border:1px solid #eee;border-radius:10px}
+.reviews-section h2{text-align:center;font-size:26px;margin-bottom:26px;font-weight:700}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.review-card{padding:22px;border:1px solid #eee;border-radius:12px;background:#fff}
 .stars{color:#ffb400;margin-bottom:10px}
-.review-card p{font-size:14px;color:#555;margin-bottom:10px}
-.review-card .author{font-weight:600;font-size:13px}
-footer{background:#1a1a1a;color:#ccc;padding:40px 0;text-align:center;font-size:13px}
+.review-card p{font-size:14px;color:#444;margin-bottom:12px;font-style:italic}
+.review-card .author{font-weight:700;font-size:13px;color:#1a1a1a}
+footer{background:#1a1a1a;color:#aaa;padding:36px 0;text-align:center;font-size:13px}
 footer a{color:#fff}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:flex-start;justify-content:center;z-index:1000;padding:30px 16px;overflow-y:auto}
+.modal-overlay.active{display:flex}
+.modal{background:#fff;border-radius:14px;width:100%;max-width:520px;padding:28px;position:relative;animation:pop .25s ease-out}
+@keyframes pop{from{opacity:0;transform:translateY(20px) scale(.95)}to{opacity:1;transform:none}}
+.modal-close{position:absolute;top:14px;right:14px;background:none;border:none;font-size:24px;cursor:pointer;color:#666}
+.modal h2{font-size:22px;margin-bottom:6px}
+.modal .summary{background:#faf5ff;border:1px solid #e9d5ff;border-radius:10px;padding:14px;margin:16px 0;display:flex;gap:12px;align-items:center}
+.modal .summary img{width:60px;height:60px;border-radius:8px;object-fit:cover}
+.modal .summary .s-info h4{font-size:14px;margin-bottom:4px}
+.modal .summary .s-info p{font-size:13px;color:#666}
+.modal .summary .s-price{margin-left:auto;font-weight:800;color:#7c3aed;font-size:18px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-grid .full{grid-column:1/-1}
+.field label{display:block;font-size:13px;margin-bottom:4px;font-weight:600;color:#333}
+.field input,.field select{width:100%;padding:11px 12px;border:1.5px solid #ddd;border-radius:8px;font-size:14px;font-family:inherit;transition:border-color .15s}
+.field input:focus,.field select:focus{outline:none;border-color:#7c3aed}
+.field input.invalid{border-color:#e53e3e}
+.field .err{color:#e53e3e;font-size:12px;margin-top:3px;display:none}
+.field input.invalid+.err{display:block}
+.modal .btn{margin-top:14px}
+.success{text-align:center;padding:20px 0}
+.success .check{width:70px;height:70px;border-radius:50%;background:#10b981;color:#fff;font-size:38px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.success h2{color:#10b981;margin-bottom:6px}
+.success p{color:#555;margin-bottom:6px}
+.success .order-id{font-weight:700;color:#1a1a1a;margin-top:8px}
+.loading{display:inline-block;width:18px;height:18px;border:2px solid #fff;border-top-color:transparent;border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 @media(max-width:768px){
-  .product{grid-template-columns:1fr;gap:20px;padding:20px 0}
+  .product{grid-template-columns:1fr;gap:18px;padding:18px 0}
   .features,.review-grid{grid-template-columns:1fr}
+  .form-grid{grid-template-columns:1fr}
   nav{display:none}
+  h1.product-title{font-size:20px}
+  .price{font-size:26px}
+  .description h2,.reviews-section h2{font-size:22px}
 }
 </style>
 </head>
 <body>
+
+<div class="announce">🎁 Limited time offer — <strong>FREE delivery</strong> on all orders. Save up to 60% today!</div>
+
 <header>
   <div class="container header-inner">
     <div class="logo">ZEAVS</div>
     <nav><ul>
-      <li><a href="#">Início</a></li>
-      <li><a href="#">Tapetes Artesanais</a></li>
-      <li><a href="#">Mini Câmara</a></li>
-      <li><a href="#">Sobre / Contacto</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#description">Product</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#">Contact</a></li>
     </ul></nav>
     <div class="header-icons">🔍 👤 🛒</div>
   </div>
@@ -95,7 +133,7 @@ footer a{color:#fff}
 
 <section class="container product">
   <div class="product-images">
-    <img id="mainImg" src="https://zeavs.com/cdn/shop/files/e460e5068cbe399aeabca44a1d36a5b2_aa3a0796-a8ad-47b4-9f15-eeaa065c864f.gif" alt="Câmara WiFi Ultra-Clara">
+    <img id="mainImg" class="main-img" src="https://zeavs.com/cdn/shop/files/e460e5068cbe399aeabca44a1d36a5b2_aa3a0796-a8ad-47b4-9f15-eeaa065c864f.gif" alt="Ultra-Clear Wireless WiFi Camera">
     <div class="thumbs">
       <img class="active" src="https://zeavs.com/cdn/shop/files/e460e5068cbe399aeabca44a1d36a5b2_aa3a0796-a8ad-47b4-9f15-eeaa065c864f.gif" alt="">
       <img src="https://zeavs.com/cdn/shop/files/998e0a36151d6df248b31f90dfac258a63143212943131010958169EN11679091c5a880faf6fb5e6087eb1b2dc_ba3c0d0f-0390-4d54-acb3-cb05dff4b73a.jpg" alt="">
@@ -106,105 +144,138 @@ footer a{color:#fff}
   </div>
 
   <div class="product-info">
-    <div class="reviews">★★★★★ (2.760 Avaliações)</div>
-    <h1 class="product-title">✅🤖 Câmara WiFi Ultra-Clara Sem Fios para Monitorização Discreta — controle a sua casa em qualquer lugar 💫</h1>
+    <div class="reviews-stars">★★★★★ <span>(2,760 Reviews)</span></div>
+    <h1 class="product-title">Ultra-Clear Wireless WiFi Camera — Discreet Monitoring Anytime, Anywhere</h1>
     <div class="price-row">
-      <span class="price">59,99€</span>
+      <span class="price" id="livePrice">59,99€</span>
       <span class="old-price">149,99€</span>
-      <span class="save-badge">POUPE 60%</span>
+      <span class="save-badge">SAVE 60%</span>
     </div>
     <div class="sku">SKU: O-9166</div>
 
-    <div class="color-label">Cor — A9</div>
-    <div class="color-options">
-      <button class="color-btn active">A9 Câmara Sem Fios</button>
+    <div class="trust-row">
+      <span>✅ Bluetooth Connection</span>
+      <span>🌙 HD Night Vision</span>
+      <span>🔋 980-day standby</span>
     </div>
 
-    <div class="bundle-title">PACOTE & POUPE</div>
-    <div class="bundles">
-      <div class="bundle">
-        <div class="bundle-info">
-          <h4>Comprar 1</h4>
-          <p>Poupa 90,00€</p>
-        </div>
+    <div class="bundle-title">BUNDLE &amp; SAVE</div>
+    <div class="bundles" id="bundles">
+      <div class="bundle" data-qty="1" data-price="59.99">
+        <div class="bundle-info"><h4>Buy 1</h4><p>Standard price</p></div>
         <div class="bundle-price"><div class="now">59,99€</div><div class="was">149,99€</div></div>
       </div>
-      <div class="bundle active">
-        <span class="badge popular">MAIS POPULAR</span>
-        <div class="bundle-info">
-          <h4>Comprar 2 — 10% OFF</h4>
-          <p>Poupa 191,98€</p>
-        </div>
+      <div class="bundle active" data-qty="2" data-price="107.98">
+        <span class="badge popular">MOST POPULAR</span>
+        <div class="bundle-info"><h4>Buy 2 — 10% OFF</h4><p>Save 191,98€</p></div>
         <div class="bundle-price"><div class="now">107,98€</div><div class="was">299,98€</div></div>
       </div>
-      <div class="bundle">
-        <span class="badge">MELHOR VALOR 🔥</span>
-        <div class="bundle-info">
-          <h4>Comprar 3 — 15% OFF</h4>
-          <p>Poupa 297,00€</p>
-        </div>
+      <div class="bundle" data-qty="3" data-price="152.97">
+        <span class="badge">BEST VALUE 🔥</span>
+        <div class="bundle-info"><h4>Buy 3 — 15% OFF</h4><p>Save 297,00€</p></div>
         <div class="bundle-price"><div class="now">152,97€</div><div class="was">449,97€</div></div>
       </div>
-      <div class="bundle">
-        <span class="badge">MAIS POUPANÇA 🔥🔥</span>
-        <div class="bundle-info">
-          <h4>Comprar 4 — 20% OFF</h4>
-          <p>Poupa 407,04€</p>
-        </div>
+      <div class="bundle" data-qty="4" data-price="191.96">
+        <span class="badge">MAX SAVINGS 🔥🔥</span>
+        <div class="bundle-info"><h4>Buy 4 — 20% OFF</h4><p>Save 407,04€</p></div>
         <div class="bundle-price"><div class="now">191,96€</div><div class="was">599,96€</div></div>
       </div>
     </div>
 
-    <button class="btn btn-add">Adicionar ao Carrinho</button>
-    <button class="btn btn-buy">Comprar Agora</button>
+    <button class="btn btn-buy" id="orderBtn">🛒 Encomendar Agora — Pagamento na Entrega</button>
 
     <div class="timeline">
-      <div class="timeline-item"><span class="icon">🛒</span><strong>25 de Maio</strong>Encomendado</div>
-      <div class="timeline-item"><span class="icon">🚚</span><strong>26–27 de Maio</strong>Encomenda Pronta</div>
-      <div class="timeline-item"><span class="icon">🎁</span><strong>4–6 de Junho</strong>Entregue</div>
+      <div class="timeline-item"><span class="icon">🛒</span><strong>Hoje</strong>Encomenda</div>
+      <div class="timeline-item"><span class="icon">📦</span><strong>1-2 dias</strong>Processamento</div>
+      <div class="timeline-item"><span class="icon">🎁</span><strong>3-5 dias</strong>Entregue</div>
     </div>
   </div>
 </section>
 
-<section class="description">
+<section class="description" id="description">
   <div class="container description-content">
     <h2>Descrição do Produto</h2>
-    <p>A câmara WiFi ultra-clara sem fios da ZEAVS foi concebida para uma vigilância discreta e fiável. Com qualidade de imagem nítida, visão noturna por infravermelhos e ligação Bluetooth, pode acompanhar tudo o que importa — em casa, no escritório ou em viagem.</p>
+    <p class="sub">Tudo o que precisa para monitorizar a sua casa, escritório ou negócio.</p>
 
     <div class="features">
       <div class="feature"><div class="ico">📡</div><h3>Ligação Bluetooth</h3><p>Funciona com ou sem internet, ideal para qualquer ambiente.</p></div>
       <div class="feature"><div class="ico">🌙</div><h3>Visão Noturna HD</h3><p>Infravermelhos de alta definição para imagens claras à noite.</p></div>
-      <div class="feature"><div class="ico">🔋</div><h3>Autonomia 980 dias</h3><p>Um único carregamento dura cerca de 900 dias em modo standby.</p></div>
+      <div class="feature"><div class="ico">🔋</div><h3>Autonomia 980 dias</h3><p>Um único carregamento dura quase 3 anos em modo standby.</p></div>
     </div>
 
-    <img src="https://zeavs.com/cdn/shop/files/998e0a36151d6df248b31f90dfac258a63143212943131010958169EN11679091c5a880faf6fb5e6087eb1b2dc_ba3c0d0f-0390-4d54-acb3-cb05dff4b73a.jpg" alt="Detalhes do produto">
-    <img src="https://zeavs.com/cdn/shop/files/b9838d176a21e2e09fecd347aaccb50663143212943131010958169EN18f14e45fceea167a5a36dedd4bea2543_d6d2060e-d1a9-4741-ab38-5cfe38fc739a.jpg" alt="Características">
-    <img src="https://zeavs.com/cdn/shop/files/b0c681eff73dbfc109134f2fb77e92cd63143212943131010958169EN1c9f0f895fb98ab9159f51fd0297e236d_08c76b06-748f-4b77-9351-7da8e88dfd9d.jpg" alt="Funcionalidades">
-    <img src="https://zeavs.com/cdn/shop/files/5ee8b22f1c0dba88931074966c96f27b63143212943131010958169EN145c48cce2e2d7fbdea1afc51c7c6ad26_b402a9fa-fdc0-4227-b170-fe4d1fc14d33.jpg" alt="Instalação">
-    <img src="https://zeavs.com/cdn/shop/files/8866efdd19aad2874375a9a6415c890963143212943131010958169EN1d3d9446802a44259755d38e6d163e820_8d7cae1a-257a-476d-beaa-955de734ee96.jpg" alt="Mais detalhes">
+    <p>A câmara WiFi ultra-clara sem fios da ZEAVS foi concebida para uma vigilância discreta e fiável. Imagem nítida em alta definição, visão noturna por infravermelhos e ligação Bluetooth — controle tudo o que importa em casa, no escritório ou em viagem.</p>
+
+    <img src="https://zeavs.com/cdn/shop/files/998e0a36151d6df248b31f90dfac258a63143212943131010958169EN11679091c5a880faf6fb5e6087eb1b2dc_ba3c0d0f-0390-4d54-acb3-cb05dff4b73a.jpg" alt="" loading="lazy">
+    <img src="https://zeavs.com/cdn/shop/files/b9838d176a21e2e09fecd347aaccb50663143212943131010958169EN18f14e45fceea167a5a36dedd4bea2543_d6d2060e-d1a9-4741-ab38-5cfe38fc739a.jpg" alt="" loading="lazy">
+    <img src="https://zeavs.com/cdn/shop/files/b0c681eff73dbfc109134f2fb77e92cd63143212943131010958169EN1c9f0f895fb98ab9159f51fd0297e236d_08c76b06-748f-4b77-9351-7da8e88dfd9d.jpg" alt="" loading="lazy">
+    <img src="https://zeavs.com/cdn/shop/files/5ee8b22f1c0dba88931074966c96f27b63143212943131010958169EN145c48cce2e2d7fbdea1afc51c7c6ad26_b402a9fa-fdc0-4227-b170-fe4d1fc14d33.jpg" alt="" loading="lazy">
 
     <p><strong>Sem preocupações com o atendimento ao cliente.</strong> 36 meses de substituição gratuita, 30 dias de garantia e reembolso incondicional possível.</p>
   </div>
 </section>
 
-<section class="reviews-section">
+<section class="reviews-section" id="reviews">
   <div class="container">
     <h2>O que dizem os nossos clientes</h2>
     <div class="review-grid">
-      <div class="review-card"><div class="stars">★★★★★</div><p>Produto excelente! A qualidade da imagem é impressionante, especialmente à noite. Recomendo vivamente.</p><div class="author">— Maria Silva</div></div>
-      <div class="review-card"><div class="stars">★★★★★</div><p>Muito fácil de instalar e a bateria realmente dura imenso tempo. Estou muito satisfeito com a compra.</p><div class="author">— João Pereira</div></div>
-      <div class="review-card"><div class="stars">★★★★★</div><p>Discreta e eficaz. Perfeita para monitorizar a minha loja sem que ninguém repare. Vale cada cêntimo.</p><div class="author">— Ana Costa</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"Produto excelente! A qualidade da imagem é impressionante, especialmente à noite. Recomendo vivamente."</p><div class="author">— Maria Silva</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"Muito fácil de instalar e a bateria realmente dura imenso tempo. Estou muito satisfeito com a compra."</p><div class="author">— João Pereira</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"Discreta e eficaz. Perfeita para monitorizar a minha loja sem que ninguém repare. Vale cada cêntimo."</p><div class="author">— Ana Costa</div></div>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p>© 2026 ZEAVS — Todos os direitos reservados. | <a href="#">Política de Privacidade</a> · <a href="#">Termos</a> · <a href="#">Contacto</a></p>
+    <p>© 2026 ZEAVS — Todos os direitos reservados · <a href="#">Política de Privacidade</a> · <a href="#">Termos</a> · <a href="#">Contacto</a></p>
   </div>
 </footer>
 
+<div class="modal-overlay" id="orderModal" role="dialog" aria-modal="true">
+  <div class="modal">
+    <button class="modal-close" id="closeModal" aria-label="Fechar">✕</button>
+    <div id="formStep">
+      <h2>Finalizar Encomenda</h2>
+      <p style="color:#666;font-size:14px">Preencha os seus dados — pagamento na entrega.</p>
+      <div class="summary">
+        <img src="https://zeavs.com/cdn/shop/files/e460e5068cbe399aeabca44a1d36a5b2_aa3a0796-a8ad-47b4-9f15-eeaa065c864f.gif" alt="">
+        <div class="s-info">
+          <h4>Câmara WiFi Ultra-Clara</h4>
+          <p id="sumQty">Quantidade: 2</p>
+        </div>
+        <div class="s-price" id="sumPrice">107,98€</div>
+      </div>
+      <form id="orderForm" novalidate>
+        <div class="form-grid">
+          <div class="field full"><label>Nome completo *</label><input name="name" required><div class="err">Insira o seu nome</div></div>
+          <div class="field full"><label>Telemóvel *</label><input name="phone" type="tel" required><div class="err">Telemóvel inválido</div></div>
+          <div class="field full"><label>Email (opcional)</label><input name="email" type="email"></div>
+          <div class="field full"><label>Morada *</label><input name="address" required><div class="err">Insira a sua morada</div></div>
+          <div class="field"><label>Cidade *</label><input name="city" required><div class="err">Insira a cidade</div></div>
+          <div class="field"><label>Código Postal *</label><input name="zipcod" required><div class="err">Código postal inválido</div></div>
+          <div class="field full"><label>Distrito / Província</label><input name="province"></div>
+        </div>
+        <button type="submit" class="btn btn-buy" id="submitBtn">CONFIRMAR ENCOMENDA</button>
+      </form>
+    </div>
+    <div id="successStep" style="display:none">
+      <div class="success">
+        <div class="check">✓</div>
+        <h2>Encomenda Confirmada!</h2>
+        <p>Obrigado pela sua compra. Entraremos em contacto em breve para confirmar a entrega.</p>
+        <p class="order-id" id="orderIdText"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
+const WEBHOOK = "https://script.google.com/macros/s/AKfycbwNcUtfbC1mKhUxR7iYKjF5f0rf9ALQ48XGoUJJpVtUMEyWN2J-laZj0EvJhavFkSoBXg/exec";
+const PRODUCT_TITLE = "Ultra-Clear Wireless WiFi Camera";
+const SKU = "O-9166";
+
+let selectedQty = 2, selectedPrice = 107.98;
+
 document.querySelectorAll('.thumbs img').forEach(t=>{
   t.addEventListener('click',()=>{
     document.querySelectorAll('.thumbs img').forEach(i=>i.classList.remove('active'));
@@ -212,11 +283,83 @@ document.querySelectorAll('.thumbs img').forEach(t=>{
     document.getElementById('mainImg').src=t.src;
   });
 });
+
 document.querySelectorAll('.bundle').forEach(b=>{
   b.addEventListener('click',()=>{
     document.querySelectorAll('.bundle').forEach(x=>x.classList.remove('active'));
     b.classList.add('active');
+    selectedQty = parseInt(b.dataset.qty);
+    selectedPrice = parseFloat(b.dataset.price);
+    document.getElementById('livePrice').textContent = selectedPrice.toFixed(2).replace('.',',')+'€';
   });
+});
+
+const modal = document.getElementById('orderModal');
+function openModal(){
+  document.getElementById('sumQty').textContent = 'Quantidade: '+selectedQty;
+  document.getElementById('sumPrice').textContent = selectedPrice.toFixed(2).replace('.',',')+'€';
+  document.getElementById('formStep').style.display='';
+  document.getElementById('successStep').style.display='none';
+  modal.classList.add('active');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){modal.classList.remove('active');document.body.style.overflow=''}
+document.getElementById('orderBtn').addEventListener('click',openModal);
+document.getElementById('closeModal').addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+
+function validate(form){
+  let valid=true;
+  ['name','phone','address','city','zipcod'].forEach(n=>{
+    const el=form.elements[n];
+    const v=(el.value||'').trim();
+    let bad=!v;
+    if(n==='phone'&&v&&!/^[+\d\s\-()]{7,}$/.test(v))bad=true;
+    if(n==='zipcod'&&v&&v.length<3)bad=true;
+    el.classList.toggle('invalid',bad);
+    if(bad)valid=false;
+  });
+  return valid;
+}
+
+document.getElementById('orderForm').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const form=e.target;
+  if(!validate(form))return;
+  const btn=document.getElementById('submitBtn');
+  btn.disabled=true;
+  btn.innerHTML='<span class="loading"></span> A processar...';
+  const orderId='ORD-'+Date.now();
+  const payload={
+    id_order:orderId,
+    date:new Date().toISOString().replace('T',' ').substring(0,19),
+    name:form.elements.name.value.trim(),
+    sku:SKU,
+    quantity:selectedQty,
+    phone:form.elements.phone.value.trim(),
+    email:form.elements.email.value.trim(),
+    product_title:PRODUCT_TITLE,
+    address:form.elements.address.value.trim(),
+    city:form.elements.city.value.trim(),
+    zipcod:form.elements.zipcod.value.trim(),
+    province:form.elements.province.value.trim(),
+    lead_value:selectedPrice,
+    country_code:'PT'
+  };
+  try{
+    await fetch(WEBHOOK,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});
+    document.getElementById('formStep').style.display='none';
+    document.getElementById('successStep').style.display='';
+    document.getElementById('orderIdText').textContent='Nº da encomenda: '+orderId;
+  }catch(err){
+    alert('Erro ao enviar. Tente novamente.');
+    btn.disabled=false;
+    btn.innerHTML='CONFIRMAR ENCOMENDA';
+  }
+});
+
+['name','phone','address','city','zipcod'].forEach(n=>{
+  document.querySelector('[name="'+n+'"]').addEventListener('input',e=>e.target.classList.remove('invalid'));
 });
 </script>
 </body>
